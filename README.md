@@ -1,4 +1,4 @@
-# Udemy - Build A TodoList with Java, Spring Boot and Vue
+# todoapi - Udemy - Build A TodoList with Java, Spring Boot and Vue
 
 https://www.udemy.com/course/build-a-todolist-with-java-spring-boot-and-vue/learn/lecture/28872522#overview
 
@@ -28,7 +28,7 @@ https://www.udemy.com/course/build-a-todolist-with-java-spring-boot-and-vue/lear
 - Install Intellij IDEA Ultimate Edition
 - Install JPA Buddy plugin in Intellij IDEA
 
-### Blank Project Setup - start.spring.io
+### Blank Back-end Project Setup - start.spring.io
 
 - lombok
 - spring web
@@ -39,28 +39,6 @@ https://www.udemy.com/course/build-a-todolist-with-java-spring-boot-and-vue/lear
 ### API tool Setup
 
 - Install Insomnia (https://insomnia.rest/)
-
-## Front-end Development Setup
-
-- Install node.js and npm using nvm
-
-https://github.com/nvm-sh/nvm
-
-```shell
-nvm -v
-nvm ls-remote
-nvm install --lts
-nvm list
-```
-
-- Install vue cli using npm
-
-https://cli.vuejs.org/guide/installation.html
-
-```shell
-npm install -g @vue/cli
-vue --version
-```
 
 ## How to run the back-end application
 
