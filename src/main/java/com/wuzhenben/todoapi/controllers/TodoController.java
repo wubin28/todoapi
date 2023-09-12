@@ -31,4 +31,16 @@ public class TodoController {
     public Todo create(@RequestBody Todo todo) {
         return this.todoRepository.save(todo);
     }
+
+    @PutMapping("/{todoId}")
+    public Optional<Todo> update(@PathVariable("todoId") Long todoId, @RequestBody Todo updatedTodo) {
+        return this.todoRepository.findById(todoId)
+                .map(todoFound -> {
+                    todoFound.setTitle(updatedTodo.getTitle());
+                    todoFound.setCompleted(updatedTodo.getCompleted());
+                    Todo savedTodo = this.todoRepository.save(todoFound);
+                    return savedTodo;
+                });
+    }
+
 }
