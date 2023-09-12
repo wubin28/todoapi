@@ -2,23 +2,33 @@
 
 https://www.udemy.com/course/build-a-todolist-with-java-spring-boot-and-vue/learn/lecture/28872522#overview
 
-## Docker Setup
+## Setup
+
+### Proxy Setup
+
+- As to Ubuntu, set ignore hosts in Network Proxy Settings
+
+```value
+0.0.0.0, localhost, 127.0.0.0/8, ::1
+```
+
+### Docker Setup
 
 - Install Docker for Ubuntu (not Docker Desktop)
 - Install Docker desktop for Mac
 - Install Docker desktop with WSL2 for Windows
 
-## JDK Setup
+### JDK Setup
 
 - Install JDK 17 using SDKMAN(for Mac/Linux) or Chocolatey/Jabba(for Windows)
 - Install Gradle 8.3 using SDKMAN(for Mac/Linux) or Chocolatey(for Windows)
 
-## IDE Setup
+### IDE Setup
 
 - Install Intellij IDEA Ultimate Edition
 - Install JPA Buddy plugin in Intellij IDEA
 
-## Blank Project Setup - start.spring.io
+### Blank Project Setup - start.spring.io
 
 - lombok
 - spring web
@@ -26,6 +36,21 @@ https://www.udemy.com/course/build-a-todolist-with-java-spring-boot-and-vue/lear
 - flyway migration
 - postgresql driver
 
-## API tool Setup
+### API tool Setup
 
 - Install Insomnia (https://insomnia.rest/)
+
+## How to run the application
+
+- Start postgres database and pgadmin using docker compose
+
+```shell
+docker compose up -d
+```
+
+- Start the web application
+
+```shell
+./gradlew bootRun
+```
+
