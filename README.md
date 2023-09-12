@@ -2,7 +2,7 @@
 
 https://www.udemy.com/course/build-a-todolist-with-java-spring-boot-and-vue/learn/lecture/28872522#overview
 
-## Setup
+## Back-end Development Setup
 
 ### Proxy Setup
 
@@ -40,7 +40,29 @@ https://www.udemy.com/course/build-a-todolist-with-java-spring-boot-and-vue/lear
 
 - Install Insomnia (https://insomnia.rest/)
 
-## How to run the application
+## Front-end Development Setup
+
+- Install node.js and npm using nvm
+
+https://github.com/nvm-sh/nvm
+
+```shell
+nvm -v
+nvm ls-remote
+nvm install --lts
+nvm list
+```
+
+- Install vue cli using npm
+
+https://cli.vuejs.org/guide/installation.html
+
+```shell
+npm install -g @vue/cli
+vue --version
+```
+
+## How to run the back-end application
 
 - Start postgres database and pgadmin using docker compose
 
