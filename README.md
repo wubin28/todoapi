@@ -54,3 +54,14 @@ docker compose up -d
 ./gradlew bootRun
 ```
 
+- Check the API using Insomnia
+
+open Insomnia -> Java Todo collection -> GetAll
+
+- Check the database using pgadmin
+
+open portainer -> http://localhost:9443 -> Containers -> todoapi-pgadmin-1 -> click the link "5050:80" -> 
+username/password: wubin28@gmail.com/wubin28@gmail.com -> Servers -> mypostgres -> databases -> javaTodo -> 
+schemas -> public -> tables -> todo -> right-click -> "View/Edit Data" -> All Rows
+
+
