@@ -61,7 +61,17 @@ open Insomnia -> Java Todo collection -> GetAll
 - Check the database using pgadmin
 
 open portainer -> http://localhost:9443 -> Containers -> todoapi-pgadmin-1 -> click the link "5050:80" -> 
-username/password: wubin28@gmail.com/wubin28@gmail.com -> Servers -> mypostgres -> databases -> javaTodo -> 
-schemas -> public -> tables -> todo -> right-click -> "View/Edit Data" -> All Rows
+username/password: wubin28@gmail.com/wubin28@gmail.com -> Servers 
+
+  - Register a server
+
+  right-click Servers -> Register -> Server... -> General -> Name: mypostgres -> Connection -> 
+  Host name/address: postgres -> 
+  Port: 5432 -> Maintenance database: postgres -> Username: postgres -> Password: postgres -> Save password? Yes
+
+  - Connect to the server
+  
+  mypostgres -> databases -> javaTodo -> 
+  schemas -> public -> tables -> todo -> right-click -> "View/Edit Data" -> All Rows
 
 
