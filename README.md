@@ -36,10 +36,6 @@ https://www.udemy.com/course/build-a-todolist-with-java-spring-boot-and-vue/lear
 - flyway migration
 - postgresql driver
 
-### API tool Setup
-
-- Install Insomnia (https://insomnia.rest/)
-
 ## How to run the back-end application
 
 - Start postgres database and pgadmin using docker compose
@@ -74,4 +70,14 @@ username/password: wubin28@gmail.com/wubin28@gmail.com -> Servers
   mypostgres -> databases -> javaTodo -> 
   schemas -> public -> tables -> todo -> right-click -> "View/Edit Data" -> All Rows
 
+## How to check api documentation
+
+http://localhost:8081/swagger-ui.html
+
+### How to check API functions in a tool
+
+- Install Insomnia (https://insomnia.rest/)
+- Run database and db admin: ```docker compose up -d```
+- Run the application: ```./gradlew bootRun```
+- Open Insomnia -> add a collection -> add POST request -> add GET request -> add PUT request -> add DELETE request
 
